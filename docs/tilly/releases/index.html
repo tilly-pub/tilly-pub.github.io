@@ -12,47 +12,23 @@ gtag('config', 'G-ZZCNDX2JWR');
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TIL</title>
+<title>tilly version 0.0.1 | TILs</title>
 
-<link href="https://github.com/tilly-org" rel="me">
-<style>
-input[type=search] {
-    padding: .25em;
-    font-size: 16px;
-    width: 60%;
+<link rel="stylesheet" href="/static/github-light.css">
+<script>
+// Fix broken images if data-canonical-src is available
+function handleImageError(event) {
+  if (event.target.tagName === 'IMG') {
+    const canonicalSrc = event.target.getAttribute('data-canonical-src');
+    if (canonicalSrc) {
+      event.target.src = canonicalSrc;
+    }
+  }
 }
-input[type=submit] {
-    box-sizing: border-box;
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    font-weight: 400;
-    cursor: pointer;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    padding: .5em 0.8em;
-    font-size: 16px;
-    line-height: 1;
-    border-radius: .25rem;
-    margin-left: 0.3em;
-}
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.topic {
-    background-color: #ccc;
-    padding: 3px;
-    border: 1px solid #777;
-    font-size: 0.65em;
-    position: relative;
-    top: -1px;
-}
-.topic a {
-    text-decoration: none;
-    color: black;
-}
-</style>
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.addEventListener('error', handleImageError, true);
+});
+</script>
 
 <style>
 body {
@@ -184,27 +160,64 @@ div#ft a {
 </nav>
 <section class="body">
 
+<h1>tilly version 0.0.1</h1>
 
-<h1>TIL</h1>
-
-
-
-
-<p><strong>Browse by topic:</strong>
-
-  <a title="1 TIL" href="/tilly">tilly</a> 1
-
-</p>
-
-<h2>Recent TILs</h2>
+<ul>
+<li>
+</li></ul>
 
 
-    <h3><span class="topic"><a href="/tilly">tilly</a></span> <a href="/tilly/releases">tilly version 0.0.1</a> - 2025-01-13</h3>
-    None
 
 
-<p><a href="/all">Browse all 1 TILs</a></p>
+<p class="created">Created 2025-01-13T17:09:07+01:00 &middot; <a href="tilly/releases.md">Edit</a></p>
 
+<script>
+// Add visible # links to all h2+ headings
+document.querySelectorAll('h2,h3,h4,h5,h6').forEach(el => {
+  // New style of links
+  let id = null;
+  let newStyle = el.querySelector('.heading-link');
+  if (newStyle) {
+    // Keep using existing ID on element
+    id = el.getAttribute('id');
+    // Need to pull the text out of the link
+    let text = newStyle.innerText;
+    el.removeChild(newStyle);
+    el.innerText = text;
+  } else {
+    let anchor = el.querySelector('a.anchor');
+    if (anchor) {
+      id = anchor.getAttribute('id');
+      el.removeChild(anchor);
+    }
+  }
+  if (!id) {
+    return;
+  }
+  el.setAttribute('id', id);
+  let hashLink = document.createElement('a');
+  hashLink.style.textDecoration = 'none';
+  hashLink.style.color = '#b7b3b3';
+  hashLink.style.fontSize = '0.8em';
+  hashLink.setAttribute('href', '#' + id);
+  hashLink.innerText = '#';
+  el.appendChild(document.createTextNode(' '));
+  // Add that link
+  el.appendChild(hashLink);
+});
+
+// Add an audio player after any .wav or .mp3 links
+// Get all anchor tags on the page
+document.querySelectorAll('a[href$=".wav"],a[href$=".mp3"],a[href$=".m4a"]').forEach(function(link) {
+  var href = link.getAttribute('href');
+  var audio = document.createElement('audio');
+  audio.controls = true;  // Show controls
+  audio.src = href;
+  var paragraph = document.createElement('p');
+  paragraph.appendChild(audio);
+  link.insertAdjacentElement('afterend', paragraph);
+});
+</script>
 
 </section>
 <div id="ft">
