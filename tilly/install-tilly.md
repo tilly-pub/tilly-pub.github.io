@@ -2,6 +2,9 @@
 
 Run the following to get started
 
-```bash
-pip install tilly
+```python
+
+def install():
+    pass
+
 ```
