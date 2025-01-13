@@ -1,3 +1,3 @@
 # tilly version 0.0.1
 
-- first version
+The first version of tilly is released!
