@@ -1,4 +1,5 @@
 {
     "TILLY_GOOGLE_ANALYTICS": "G-ZZCNDX2JWR",
-    "TILLY_OUTPUT_FOLDER": "docs"
+    "TILLY_OUTPUT_FOLDER": "docs",
+    "TILLY_URL": "https://github.com/tilly-pub/tilly-pub.github.io/blob/main"
 }
