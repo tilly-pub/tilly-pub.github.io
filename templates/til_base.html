@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZCNDX2JWR"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-ZZCNDX2JWR');
-</script>
+{%- include "google_analytics.html" %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TILs on tilly</title>
-
+<title>{% block title %}{% endblock %}</title>
+{% block extra_head %}{% endblock %}
 <style>
 body {
     font-family: "Helvetica Neue", helvetica, sans-serif;
@@ -148,19 +140,7 @@ div#ft a {
     <p><a href="/">Today I Learned</a></p>
 </nav>
 <section class="body">
-
-
-
-
-<h1>TILs on tilly</h1>
-
-
-
-    <h3><span class="topic">tilly</span> <a href="/tilly/install-tilly">Install tilly</a> - 2025-01-13</h3>
-    <p>Run the following to get started: &#8230; </p>
-
-
-
+{% block body %}{% endblock %}
 </section>
 <div id="ft">
     <ul>
