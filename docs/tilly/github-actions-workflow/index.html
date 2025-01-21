@@ -12,7 +12,23 @@ gtag('config', 'G-ZZCNDX2JWR');
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TILs on tilly</title>
+<title>A workflow for building and deploying to Github | TILs</title>
+
+<link rel="stylesheet" href="/static/github-light.css">
+<script>
+// Fix broken images if data-canonical-src is available
+function handleImageError(event) {
+  if (event.target.tagName === 'IMG') {
+    const canonicalSrc = event.target.getAttribute('data-canonical-src');
+    if (canonicalSrc) {
+      event.target.src = canonicalSrc;
+    }
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.addEventListener('error', handleImageError, true);
+});
+</script>
 
 <style>
 body {
@@ -149,20 +165,64 @@ div#ft a {
 </nav>
 <section class="body">
 
+<h1>A workflow for building and deploying to Github</h1>
+
+<p>Check <a href="https://github.com/tilly-pub/tilly-pub.github.io/blob/main/.github/workflows/build.yml">this</a> github actions workflow for building and deploying <a href="https://tilly-pub.github.io" rel="nofollow">https://tilly-pub.github.io</a>.</p>
 
 
 
-<h1>TILs on tilly</h1>
 
+<p class="created">Created 2025-01-21T09:13:57+01:00
+  &middot; <a href="https://github.com/tilly-pub/tilly-pub.github.io/blob/main/tilly/github-actions-workflow.md">Edit</a>
+</p>
 
+<script>
+// Add visible # links to all h2+ headings
+document.querySelectorAll('h2,h3,h4,h5,h6').forEach(el => {
+  // New style of links
+  let id = null;
+  let newStyle = el.querySelector('.heading-link');
+  if (newStyle) {
+    // Keep using existing ID on element
+    id = el.getAttribute('id');
+    // Need to pull the text out of the link
+    let text = newStyle.innerText;
+    el.removeChild(newStyle);
+    el.innerText = text;
+  } else {
+    let anchor = el.querySelector('a.anchor');
+    if (anchor) {
+      id = anchor.getAttribute('id');
+      el.removeChild(anchor);
+    }
+  }
+  if (!id) {
+    return;
+  }
+  el.setAttribute('id', id);
+  let hashLink = document.createElement('a');
+  hashLink.style.textDecoration = 'none';
+  hashLink.style.color = '#b7b3b3';
+  hashLink.style.fontSize = '0.8em';
+  hashLink.setAttribute('href', '#' + id);
+  hashLink.innerText = '#';
+  el.appendChild(document.createTextNode(' '));
+  // Add that link
+  el.appendChild(hashLink);
+});
 
-    <h3><span class="topic">tilly</span> <a href="/tilly/github-actions-workflow">A workflow for building and deploying to Github</a> - 2025-01-21</h3>
-    <p>Check <a href="https://github.com/tilly-pub/tilly-pub.github.io/blob/main/.github/workflows/build.yml">this</a> github actions workflow for building and deploying <a href="https://tilly-pub.github.io" rel="nofollow">https://tilly-pub.github.io</a>. &#8230; </p>
-
-    <h3><span class="topic">tilly</span> <a href="/tilly/install-tilly">Install tilly</a> - 2025-01-13</h3>
-    <p>Run the following to get started: &#8230; </p>
-
-
+// Add an audio player after any .wav or .mp3 links
+// Get all anchor tags on the page
+document.querySelectorAll('a[href$=".wav"],a[href$=".mp3"],a[href$=".m4a"]').forEach(function(link) {
+  var href = link.getAttribute('href');
+  var audio = document.createElement('audio');
+  audio.controls = true;  // Show controls
+  audio.src = href;
+  var paragraph = document.createElement('p');
+  paragraph.appendChild(audio);
+  link.insertAdjacentElement('afterend', paragraph);
+});
+</script>
 
 </section>
 <div id="ft">
