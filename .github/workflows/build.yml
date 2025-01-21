@@ -38,8 +38,7 @@ jobs:
         MARKDOWN_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |-
         cd main
-        tilly build
-        tilly gen-static
+        ./build.sh
     # - name: Generate missing screenshots
     #   env:
     #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
