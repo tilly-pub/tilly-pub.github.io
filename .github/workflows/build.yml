@@ -75,7 +75,7 @@ jobs:
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
         git diff --quiet || (git add . && git commit -m "Updated static sites")
-        git push
+        # git push
     # - name: Upload latest tils.db to the S3 bucket
     #   env:
     #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
