@@ -3,3 +3,4 @@
 set -e
 
 tilly build && tilly gen-static --template-folder templates
+tilly sitemap
