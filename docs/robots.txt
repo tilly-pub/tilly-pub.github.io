@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https:/tilly-pub.github.io/sitemap.xml
+Sitemap: https://tilly-pub.github.io/sitemap.xml
