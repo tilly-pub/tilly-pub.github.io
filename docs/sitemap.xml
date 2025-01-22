@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://tilly-pub.github.io/</loc>
-<priority>1.0</priority>
-</url>
+<url><loc>https://tilly-pub.github.io/</loc></url>
+<url><loc>https://tilly-pub.github.io/all/</loc></url>
+<url><loc>https://tilly-pub.github.io/releases</loc></url>
+<url><loc>https://tilly-pub.github.io/releases/v0.0.5/</loc></url>
+<url><loc>https://tilly-pub.github.io/tilly</loc></url>
+<url><loc>https://tilly-pub.github.io/tilly/install-tilly/</loc></url>
 </urlset>
