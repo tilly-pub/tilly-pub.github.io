@@ -104,7 +104,7 @@ tilly==0.0.7
     # via
     #   -r requirements.in
     #   tilly-sitemap
-tilly-sitemap==0.0.2
+tilly-sitemap==0.0.3
     # via -r requirements.in
 typing-extensions==4.12.2
     # via
