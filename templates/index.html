@@ -49,13 +49,23 @@ h1 {
 <h1>TIL</h1>
 
 
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+
 {% if enable_search %}
-<form action="/tils/search">
+
+<!-- <form action="/tils/search">
     <p>
         <input type="search" name="q" placeholder="Search {{ til_count }} TILs">
         <input type="submit" value="Search">
     </p>
-</form>
+</form> -->
 {% endif %}
 
 <p><strong>Browse by topic:</strong>
