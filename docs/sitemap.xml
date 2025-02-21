@@ -1,14 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://tilly-pub.github.io/</loc></url>
-<url><loc>https://tilly-pub.github.io/all/</loc></url>
-<url><loc>https://tilly-pub.github.io/plugins/</loc></url>
-<url><loc>https://tilly-pub.github.io/plugins/cookiecutter/</loc></url>
-<url><loc>https://tilly-pub.github.io/plugins/sitemap/</loc></url>
-<url><loc>https://tilly-pub.github.io/releases/</loc></url>
-<url><loc>https://tilly-pub.github.io/releases/v0.0.5/</loc></url>
-<url><loc>https://tilly-pub.github.io/releases/v0.0.7/</loc></url>
-<url><loc>https://tilly-pub.github.io/tilly/</loc></url>
-<url><loc>https://tilly-pub.github.io/tilly/github-actions-workflow/</loc></url>
-<url><loc>https://tilly-pub.github.io/tilly/install-tilly/</loc></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://tilly-pub.github.io/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/plugins/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/releases/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/tilly/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/plugins/cookiecutter/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/releases/v0.0.7/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/plugins/sitemap/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/tilly/github-actions-workflow/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/releases/v0.0.5/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/tilly/install-tilly/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tilly-pub.github.io/all/</loc>
+  <lastmod>2025-02-21T16:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
