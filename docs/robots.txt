@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://tilly-pub.github.io/sitemap.xml
