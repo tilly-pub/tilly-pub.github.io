@@ -45,6 +45,19 @@ h1 {
 {% endblock %}
 
 {% block body %}
+
+
+{% set pages = sql("""
+    select * from pages where path = 'index.md'
+""", {"topic": topic, "slug": slug}, database="tils")
+%}
+{% set index = pages[0] %}
+
+<h1>{{ index.title }}</h1>
+{{ index.html|safe }}
+
+
+
 {% set til_count = sql("select count(*) from TIL", database="tils")[0][0] %}
 <h1>TIL</h1>
 
