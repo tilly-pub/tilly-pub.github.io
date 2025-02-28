@@ -6,7 +6,8 @@ echo
 echo run tilly build using templates folder
 echo
 
-tilly build && tilly gen-static --template-folder templates
-tilly sitemap
+tilly build
+# && tilly gen-static --template-folder templates
+# tilly sitemap
 
 
