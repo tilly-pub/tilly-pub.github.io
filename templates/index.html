@@ -51,6 +51,8 @@ h1 {
 
 {% set til_count = sql("select count(*) from TIL", database="tils")[0][0] %}
 
+<h2>Search</h2>
+
 {% if search_type == "static" %}
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <script src="/pagefind/pagefind-ui.js"></script>
